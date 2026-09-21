@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CarePilot Installation Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <svg class="brand-logo" viewBox="0 0 1500 334" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MDLand">
+        <path d="M0 151 l0 151 37.99 0 37.99 0 .26 -86.02 .26 -86.02 7.56 10.77 c85.63 121.96 109.35 155.3 110.27 154.99 .61 -.2 27.22 -37.91 59.14 -83.79 l58.03 -83.42 .26 86.77 .26 86.77 126.74 -.29 126.74 -.29 9.39 -2.75 c19.57 -5.73 36.02 -15.5 48.4 -28.73 12.24 -13.08 18.76 -26.89 20.7 -43.8 1.36 -11.9 1.32 -139.26 -.05 -150.21 -4.16 -33.27 -29.49 -61.71 -65.37 -73.42 l-7.82 -2.55 -131.62 .05 -131.62 .05 -31.97 46.2 c-42.6 61.56 -62.81 90.82 -72.58 104.43 -9.77 13.61 -9.09 11.57 -9.93 10.53 -.84 -1.04 -26.47 -37.75 -56.96 -81.58 l-55.44 -79.69 -40.31 0 -40.31 0 0 151z m552.53 -79.91 c10.42 1.93 17.95 7.4 19.32 14.05 .38 1.85 .64 31.26 .57 65.36 -.1 56.08 -.28 62.38 -1.82 66 -2.23 5.22 -6.14 9.31 -11.1 11.6 -3.79 1.76 -8.42 1.85 -89.75 1.87 l-85.75 .02 0 -80 0 -80 81.32 0 c54.46 0 83.27 .36 87.22 1.09z" fill="#25ABE1" fill-rule="evenodd"/>
+        <path d="M661 148 l0 148 105 0 105 0 0 -11.5 c0 -10.57 .96 -14.35 2.45 -9.66 .32 1.01 3.07 4.39 6.12 7.51 14.82 15.18 33.04 21.56 58.19 20.37 21.99 -1.04 37.38 -7.72 57.18 -24.8 3.84 -3.31 5.72 -4.98 6.77 -4.72 1.05 .26 1.27 2.43 1.77 6.8 .35 3.02 1.32 7.86 2.15 10.75 l1.51 5.25 31.43 0 31.43 0 0 -4.5 c0 -2.48 -.42 -4.5 -.92 -4.5 -.51 0 -2.37 -1.22 -4.14 -2.7 -3.34 -2.81 -4.94 -3.32 -5.77 -13.42 -.84 -10.09 -.92 -29.76 -1.22 -70.88 -.31 -40.97 -.41 -60.75 -1.25 -71.98 -.85 -11.23 -2.44 -13.91 -5.73 -20.69 -5.84 -12.01 -14.22 -18.95 -31.28 -25.9 -15.05 -6.13 -27.65 -8.52 -48.36 -9.14 -34.1 -1.03 -56.53 4.42 -73.96 17.99 -13.97 10.87 -23.82 30.34 -25.97 51.31 l-.66 6.41 27.57 -0 27.57 0 1.67 -5.74 c5.01 -17.22 13.4 -23.15 33.97 -24 18.68 -.76 31.7 3.25 36.13 11.14 7.2 12.83 1.86 24.89 -13.05 29.49 -6.21 1.92 -11.13 2.72 -40.58 6.64 -18.32 2.44 -33.92 6.63 -45 12.08 -22.46 11.06 -35 31.78 -35 57.83 l0 7.54 -70.5 0 -70.5 0 0 -121.5 0 -121.5 -31 0 -31 0 0 148z m339.98 51.81 c-.07 34.81 -7.62 49 -30.79 57.89 -8.94 3.43 -24.52 4.35 -31.92 1.89 -11.49 -3.82 -16.82 -12.12 -16.72 -26.09 .07 -10.19 3.15 -16.81 10.21 -21.95 6.16 -4.48 13.59 -6.79 36.73 -11.43 13.11 -2.63 20.86 -4.72 25 -6.74 3.3 -1.61 6.34 -2.78 6.75 -2.6 .41 .18 .74 4.25 .73 9.03z M1442 51.5 c0 28.32 -.34 51.5 -.75 51.49 -.41 -0 -1.84 -1.61 -3.18 -3.57 -7.69 -11.29 -25.47 -22.92 -39.64 -25.92 -9.19 -1.95 -27.56 -1.91 -37.17 .08 -38.63 7.98 -65.04 39.46 -72.91 86.92 -2.26 13.64 -2.54 46.07 -.49 57.5 7.37 41.11 34.14 73.62 68.13 82.74 9.18 2.46 34.86 2.46 44 -.01 15.32 -4.13 30.35 -14.88 39.6 -28.32 l3.9 -5.67 .28 14.63 .28 14.63 27.97 0 27.97 0 0 -148 0 -148 -29 0 -29 0 0 51.5z m-35.12 72.38 c16.76 5.22 27.67 17.88 33.27 38.62 3 11.11 3.29 40.38 .5 51 -2.89 11.02 -8.78 22.35 -14.77 28.44 -16.82 17.08 -48.93 17.03 -64.34 -.11 -22.53 -25.06 -21.33 -86.36 2.15 -109.01 4.25 -4.1 12.05 -8.32 17.94 -9.71 6.87 -1.61 18.75 -1.25 25.25 .77z M1180.5 73.47 c-7.84 1.71 -17.26 5.58 -22.67 9.32 -5.36 3.71 -15.3 14.06 -19.89 20.71 l-3.44 5 -.28 -15.75 -.28 -15.75 -27.47 0 -27.47 0 0 109.5 0 109.5 28.45 0 28.45 0 .34 -68.25 c.34 -67.32 .38 -68.35 2.58 -75.6 2.94 -9.66 5.43 -14.39 10.44 -19.82 8.03 -8.72 17.23 -12.4 31.32 -12.53 12.99 -.13 19.31 2.05 26.57 9.17 4.65 4.55 6.07 6.78 7.97 12.54 l2.32 7 .33 73.75 .33 73.75 29.45 0 29.45 0 -.03 -74.75 c-.03 -77.12 -.51 -89.35 -4.02 -102.15 -6.46 -23.54 -24.75 -39.75 -50.95 -45.12 -11.21 -2.3 -32.11 -2.56 -41.5 -.51z" fill="#F47F22" fill-rule="evenodd"/>
+      </svg>
+    </div>
+    <p class="header-title">Installation Guide</p>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <nav class="sidebar-nav">
+      <a href="#overview" class="sidebar-link active" data-accent="blue">Overview</a>
+      <a href="#video" class="sidebar-link" data-accent="orange">Video</a>
+      <a href="#install" class="sidebar-link" data-accent="green">Documentation</a>
+      <a href="#faq" class="sidebar-link" data-accent="purple">FAQ</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+
+<!-- SEGMENT 1: OVERVIEW -->
+<section id="overview" class="section overview active">
+  <div class="container">
+    <div class="eyebrow"><span class="eyebrow-dot dot-blue"></span>ABOUT</div>
+    <h1>A faster way to complete documentation <em>through</em> MDLand iClinic.</h1>
+    <p class="lede">
+      CarePilot by iClinic plugs directly into MDLand to help doctors save time on
+      everyday tasks. Below you'll find videos and step-by-step documentation covering
+      installing the extension, using it, and submitting a complaint or support ticket —
+      plus answers to common questions.
+    </p>
+  </div>
+</section>
+
+<!-- SEGMENT 2: VIDEO -->
+<section id="video" class="section video-section">
+  <div class="container">
+    <div class="eyebrow"><span class="eyebrow-dot dot-peach"></span>VIDEO GUIDES</div>
+    <h2>Watch how it works.</h2>
+    <p class="section-sub">Three short videos: installing, using, and getting support.</p>
+
+    <div class="video-tabs" id="videoTabs">
+      <button class="video-tab active" data-video="install">1. Install the Extension</button>
+      <button class="video-tab" data-video="use">2. Use the Extension</button>
+      <button class="video-tab" data-video="support">3. Submit a Complaint / Ticket</button>
+    </div>
+
+    <div class="video-panel active" data-video="install">
+      <div class="video-wrap">
+        <button class="video-expand-btn" type="button" aria-label="Expand video">⛶</button>
+        <video controls controlsList="nofullscreen">
+          <source src="assets/install-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <div class="video-panel" data-video="use">
+      <div class="video-subtabs" id="useVideoTabs">
+        <button class="video-subtab active" data-use-video="long">Full Walkthrough</button>
+        <button class="video-subtab" data-use-video="short">Quick Overview</button>
+      </div>
+
+      <div class="video-wrap active" data-use-video="long">
+        <button class="video-expand-btn" type="button" aria-label="Expand video">⛶</button>
+        <video controls controlsList="nofullscreen">
+          <source src="assets/use-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="video-wrap" data-use-video="short">
+        <div class="video-placeholder">
+          <span class="video-placeholder-icon">🎬</span>
+          <p>The quick overview video hasn't been added yet — swap in <code>assets/use-video-short.mp4</code> once it's uploaded.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-panel" data-video="support">
+      <div class="video-wrap">
+        <button class="video-expand-btn" type="button" aria-label="Expand video">⛶</button>
+        <video controls controlsList="nofullscreen">
+          <source src="assets/support-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEGMENT 3: DOCUMENTATION -->
+<section id="install" class="section install-section">
+  <div class="container">
+    <div class="eyebrow"><span class="eyebrow-dot dot-mint"></span>DOCUMENTATION</div>
+    <h2>Step-by-step guides.</h2>
+    <p class="section-sub">Installing, using, and getting support. Slide through each step.</p>
+
+    <div class="video-tabs doc-tabs" id="docTabs">
+      <button class="video-tab active" data-doc="install">1. Install the Extension</button>
+      <button class="video-tab" data-doc="use">2. Use the Extension</button>
+      <button class="video-tab" data-doc="support">3. Submit a Complaint / Ticket</button>
+    </div>
+
+    <!-- DOC PANEL: INSTALL -->
+    <div class="doc-panel active" data-doc="install">
+      <div class="screenshot-slider" id="installScreenshotSlider">
+        <div class="screenshot-slide active">
+          <button class="screenshot-frame" type="button" data-full="assets/install-1.png" data-alt="Step 1: Look up DocPro Extension">
+            <img src="assets/install-1.png" alt="Step 1: Look up DocPro Extension">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 1</span>Look up DocPro Extension</p>
+        </div>
+        <div class="screenshot-slide">
+          <button class="screenshot-frame" type="button" data-full="assets/install-2.png" data-alt="Step 2: Click the DocPro Extension result in the Chrome Web Store">
+            <img src="assets/install-2.png" alt="Step 2: Click the DocPro Extension result in the Chrome Web Store">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 2</span>Click the DocPro Extension result in the Chrome Web Store</p>
+        </div>
+        <div class="screenshot-slide">
+          <button class="screenshot-frame" type="button" data-full="assets/install-3.png" data-alt="Step 3: Click the Install (Add to Chrome) button">
+            <img src="assets/install-3.png" alt="Step 3: Click the Install (Add to Chrome) button">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 3</span>Click the Install (Add to Chrome) button</p>
+        </div>
+        <div class="screenshot-slide">
+          <button class="screenshot-frame" type="button" data-full="assets/install-4.png" data-alt="Step 4: Confirm the Add Extension dialog">
+            <img src="assets/install-4.png" alt="Step 4: Confirm the Add Extension dialog">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 4</span>Confirm the Add Extension dialog</p>
+        </div>
+        <div class="screenshot-slide">
+          <button class="screenshot-frame" type="button" data-full="assets/install-5.png" data-alt="Step 5: Turn on the Enable on all sites toggle">
+            <img src="assets/install-5.png" alt="Step 5: Turn on the Enable on all sites toggle">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 5</span>Turn on the "Enable on all sites" toggle</p>
+        </div>
+        <div class="screenshot-slide">
+          <button class="screenshot-frame" type="button" data-full="assets/install-6.png" data-alt="Step 6: Click Allow to enable the extension for all sites">
+            <img src="assets/install-6.png" alt="Step 6: Click Allow to enable the extension for all sites">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 6</span>Click "Allow" to enable the extension for all sites</p>
+        </div>
+        <div class="screenshot-slide">
+          <button class="screenshot-frame" type="button" data-full="assets/install-7.png" data-alt="Step 7: Click the Extensions icon to see the installed extension">
+            <img src="assets/install-7.png" alt="Step 7: Click the Extensions icon to see the installed extension">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 7</span>Click the Extensions icon to see the installed extension</p>
+        </div>
+        <div class="screenshot-slide">
+          <button class="screenshot-frame" type="button" data-full="assets/install-8.png" data-alt="Step 8: Click the DocPro icon to confirm the extension installed properly">
+            <img src="assets/install-8.png" alt="Step 8: Click the DocPro icon to confirm the extension installed properly">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 8</span>Click the DocPro icon to confirm it installed properly</p>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="prev-slide" aria-label="Previous step">‹</button>
+        <div class="slider-dots"></div>
+        <button class="next-slide" aria-label="Next step">›</button>
+      </div>
+    </div>
+
+    <!-- DOC PANEL: USE -->
+    <div class="doc-panel" data-doc="use">
+      <div class="screenshot-slider" id="useScreenshotSlider">
+        <div class="screenshot-slide active">
+          <button class="screenshot-frame" type="button" data-full="assets/use-1.png" data-alt="Step 1: Log in to your MDLand EMR">
+            <img src="assets/use-1.png" alt="Step 1: Log in to your MDLand EMR">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 1</span>Log in to your MDLand EMR</p>
+        </div>
+        <div class="screenshot-slide">
+          <button class="screenshot-frame" type="button" data-full="assets/use-2.png" data-alt="Step 2: Open a patient file and locate the CarePilot extension on the right edge of your iClinic screen">
+            <img src="assets/use-2.png" alt="Step 2: Open a patient file and locate the CarePilot extension on the right edge of your iClinic screen">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 2</span>Open a patient file and locate CarePilot on the right edge of your iClinic screen</p>
+        </div>
+        <div class="screenshot-slide">
+          <button class="screenshot-frame" type="button" data-full="assets/use-3.png" data-alt="Step 3: Click Connect with MDLand to link iClinic CarePilot with your EMR">
+            <img src="assets/use-3.png" alt="Step 3: Click Connect with MDLand to link iClinic CarePilot with your EMR">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 3</span>Click "Connect with MDLand" to link CarePilot with your EMR</p>
+        </div>
+        <div class="screenshot-slide">
+          <button class="screenshot-frame" type="button" data-full="assets/use-4.png" data-alt="Step 4: Click the Start Recording button">
+            <img src="assets/use-4.png" alt="Step 4: Click the Start Recording button">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 4</span>Click the "Start Recording" button</p>
+        </div>
+        <div class="screenshot-slide">
+          <button class="screenshot-frame" type="button" data-full="assets/use-5.png" data-alt="Step 5: Click Allow while visiting the site to enable your microphone">
+            <img src="assets/use-5.png" alt="Step 5: Click Allow while visiting the site to enable your microphone">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 5</span>Click "Allow while visiting the site" to enable your microphone</p>
+        </div>
+        <div class="screenshot-slide">
+          <button class="screenshot-frame" type="button" data-full="assets/use-6.png" data-alt="Step 6: The Pre-Visit tab summarizes the patient's history and preliminary test results">
+            <img src="assets/use-6.png" alt="Step 6: The Pre-Visit tab summarizes the patient's history and preliminary test results">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 6</span>The "Pre-Visit" tab summarizes the patient's history and test results</p>
+        </div>
+        <div class="screenshot-slide">
+          <button class="screenshot-frame" type="button" data-full="assets/use-7.png" data-alt="Step 7: Pre-visit suggests tests or procedures based on patient history and information">
+            <img src="assets/use-7.png" alt="Step 7: Pre-visit suggests tests or procedures based on patient history and information">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 7</span>Pre-visit suggests tests and procedures based on patient history</p>
+        </div>
+        <div class="screenshot-slide">
+          <button class="screenshot-frame" type="button" data-full="assets/use-8.png" data-alt="Step 8: The Doctor's Input tab lets you record or type your notes">
+            <img src="assets/use-8.png" alt="Step 8: The Doctor's Input tab lets you record or type your notes">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 8</span>"Doctor's Input": record your note, or type it yourself</p>
+        </div>
+        <div class="screenshot-slide">
+          <button class="screenshot-frame" type="button" data-full="assets/use-9.png" data-alt="Step 9: Click Generate Clinical Note to create the EMR note for this patient">
+            <img src="assets/use-9.png" alt="Step 9: Click Generate Clinical Note to create the EMR note for this patient">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 9</span>Click "Generate Clinical Note" to create the EMR note</p>
+        </div>
+        <div class="screenshot-slide">
+          <button class="screenshot-frame" type="button" data-full="assets/use-10.png" data-alt="Step 10: Edit, clear, or copy the final note before sending it to your EMR">
+            <img src="assets/use-10.png" alt="Step 10: Edit, clear, or copy the final note before sending it to your EMR">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 10</span>Edit, clear, or copy the final note before sending it</p>
+        </div>
+        <div class="screenshot-slide">
+          <button class="screenshot-frame" type="button" data-full="assets/use-11.png" data-alt="Step 11: Confirm whether to replace your previous note with the new DocPro note, or keep both">
+            <img src="assets/use-11.png" alt="Step 11: Confirm whether to replace your previous note with the new DocPro note, or keep both">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 11</span>Choose to replace your previous note or keep both</p>
+        </div>
+        <div class="screenshot-slide">
+          <button class="screenshot-frame" type="button" data-full="assets/use-12.png" data-alt="Step 12: Select which sections you want to send and which to keep untouched">
+            <img src="assets/use-12.png" alt="Step 12: Select which sections you want to send and which to keep untouched">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 12</span>Select which sections to send and which to keep untouched</p>
+        </div>
+        <div class="screenshot-slide">
+          <button class="screenshot-frame" type="button" data-full="assets/use-13.png" data-alt="Step 13: Check the responsibility acknowledgment before pressing Send to EMR">
+            <img src="assets/use-13.png" alt="Step 13: Check the responsibility acknowledgment before pressing Send to EMR">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 13</span>Check the acknowledgment box, then press "Send to EMR"</p>
+        </div>
+        <div class="screenshot-slide">
+          <button class="screenshot-frame" type="button" data-full="assets/use-14.png" data-alt="Step 14: Wait for the note to be pasted into your MDLand EMR until you see the green confirmation">
+            <img src="assets/use-14.png" alt="Step 14: Wait for the note to be pasted into your MDLand EMR until you see the green confirmation">
+          </button>
+          <p class="screenshot-caption"><span class="step-badge">Step 14</span>Wait for the green "Pasted successfully" confirmation</p>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="prev-slide" aria-label="Previous step">‹</button>
+        <div class="slider-dots"></div>
+        <button class="next-slide" aria-label="Next step">›</button>
+      </div>
+    </div>
+
+    <!-- DOC PANEL: SUPPORT -->
+    <div class="doc-panel" data-doc="support">
+      <div class="step-layout">
+        <nav class="step-nav">
+          <button class="step-link active">Step 1</button>
+          <button class="step-link">Step 2</button>
+          <button class="step-link">Step 3</button>
+          <button class="step-link">Step 4</button>
+          <button class="step-link">Step 5</button>
+        </nav>
+        <div class="slider">
+          <div class="slide active" data-step="1">
+            <div class="slide-image">🎧</div>
+            <div class="slide-instruction">
+              <span class="step-badge">Step 1</span>
+              <p>Click the CarePilot icon and open the "Support" tab.</p>
+            </div>
+          </div>
+          <div class="slide" data-step="2">
+            <div class="slide-image">🎫</div>
+            <div class="slide-instruction">
+              <span class="step-badge">Step 2</span>
+              <p>Select "Submit a Ticket" or "Report an Issue."</p>
+            </div>
+          </div>
+          <div class="slide" data-step="3">
+            <div class="slide-image">📝</div>
+            <div class="slide-instruction">
+              <span class="step-badge">Step 3</span>
+              <p>Describe the issue and attach a screenshot if relevant.</p>
+            </div>
+          </div>
+          <div class="slide" data-step="4">
+            <div class="slide-image">📤</div>
+            <div class="slide-instruction">
+              <span class="step-badge">Step 4</span>
+              <p>Submit the ticket — you'll receive a confirmation with a ticket number.</p>
+            </div>
+          </div>
+          <div class="slide" data-step="5">
+            <div class="slide-image">📊</div>
+            <div class="slide-instruction">
+              <span class="step-badge">Step 5</span>
+              <p>Track the status of your ticket from the same Support tab.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="placeholder-note">
+      Replace each emoji placeholder with a real screenshot by editing the
+      <code>.slide-image</code> elements in <code>index.html</code> (e.g. swap in an
+      <code>&lt;img&gt;</code> tag), and adjust the "Use the Extension" and "Submit a Complaint / Ticket"
+      step text to match your extension's actual features.
+    </p>
+  </div>
+</section>
+
+<!-- SEGMENT 4: FAQ -->
+<section id="faq" class="section faq-section">
+  <div class="container">
+    <div class="eyebrow"><span class="eyebrow-dot dot-lavender"></span>FAQ</div>
+    <h2>Common questions.</h2>
+    <p class="section-sub">$200 / provider / month · Includes CarePilot Scribe, core ICD-10/CPT suggestions &amp; Pre-Visit Planning · 7-day trial for eligible providers</p>
+
+    <div class="faq-search">
+      <svg class="faq-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+        <line x1="16.65" y1="16.65" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <input type="search" id="faqSearch" placeholder="Search questions…" aria-label="Search FAQ">
+    </div>
+
+    <p class="faq-no-results" id="faqNoResults" hidden>No questions match your search.</p>
+
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-category">1. About iClinic CarePilot</div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">What is iClinic CarePilot?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>iClinic CarePilot is an AI-powered clinical documentation solution integrated directly into the iClinic office visit workflow. It combines ambient clinical documentation, core ICD-10 and CPT coding suggestions, and Pre-Visit Planning to help providers prepare for visits, reduce documentation effort, and spend more time focused on patient care.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">What is CarePilot Scribe?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>CarePilot Scribe is the ambient documentation capability within CarePilot. It captures the natural conversation during the patient encounter and generates structured draft clinical documentation for provider review. As part of the ambient workflow, CarePilot can also provide suggested ICD-10 diagnosis and CPT codes based on the documented encounter. The provider reviews and confirms the documentation and coding suggestions before sending the applicable information to iClinic.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">What is CarePilot Pre-Visit Planning (PVP)?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>CarePilot Pre-Visit Planning reviews available patient information before the encounter and surfaces relevant clinical information that may help the provider prepare for the visit. Depending on the information available in the patient's chart, this may include chronic conditions, current medications, previously documented issues, prior diagnostics, suspected conditions, and potential care gaps that may warrant the provider's attention.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">Who is DocPro, and why does CarePilot say "Powered by DocPro"?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>DocPro is MDLand's technology partner supporting the CarePilot experience. CarePilot is offered and integrated within the iClinic environment, with applicable functionality identified as "Powered by DocPro." MDLand remains the primary point of contact for CarePilot customers.</p>
+        </div></div>
+      </div>
+
+      <div class="accordion-category">2. Features &amp; How It Works</div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">How does CarePilot work during a patient visit?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>CarePilot is integrated into the iClinic office visit workflow. For an activated provider, CarePilot can capture the natural patient-provider conversation during the encounter and generate structured draft clinical documentation. The provider remains in control of the clinical record and reviews the generated content before sending it to iClinic.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">What information can CarePilot generate from the encounter?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <ul>
+            <li>Chief Complaint / Reason for Visit</li>
+            <li>History of Present Illness (HPI)</li>
+            <li>Review of Systems</li>
+            <li>Physical Examination findings</li>
+            <li>Assessment &amp; Plan</li>
+            <li>Suggested ICD-10 diagnosis codes</li>
+            <li>Suggested CPT codes</li>
+          </ul>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">Are ICD-10 and CPT coding suggestions included with standard CarePilot?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>Yes. Core ICD-10 and CPT code suggestions generated as part of the ambient documentation workflow are included with the standard CarePilot subscription. These suggestions are intended to assist the provider and should be reviewed for accuracy and appropriateness before being accepted or incorporated into the patient's record.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">Can I keep my existing note, or does CarePilot replace it?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>Providers remain in control of their documentation. CarePilot-generated content can be reviewed and incorporated into the clinical note as appropriate rather than automatically replacing the provider's documentation. Depending on the workflow, providers can determine which CarePilot-generated sections should be incorporated into the final note.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">How does the generated note get into iClinic?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>After the encounter, CarePilot generates draft documentation for the provider to review. Once reviewed, the applicable content can be sent into the corresponding sections of the iClinic Office Visit. Providers should review and make any necessary corrections before finalizing the clinical documentation.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">What languages does CarePilot support?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>CarePilot supports multiple languages and is designed to accommodate a broad range of patient-provider conversations. Specific language and dialect support may vary. Practices with specific language requirements should contact MDLand for additional information.</p>
+        </div></div>
+      </div>
+
+      <div class="accordion-category">3. Mobile &amp; Device Access</div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">Can I use iClinic CarePilot on a mobile device?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>Yes. CarePilot supports a mobile workflow for providers who want to use ambient documentation from a supported mobile device during the patient encounter.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">How do I access CarePilot on mobile?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>Mobile access requires a CarePilot account to be set up for the provider using the provider's email address. Once the account is created and activated, the provider uses that email address to log in to the CarePilot mobile experience.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">Does each provider need a separate mobile account?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>Yes. Because CarePilot subscriptions and clinical activity are provider-specific, the mobile account should be established for the individual participating provider using that provider's email address.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">What information is needed to set up mobile access?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>MDLand will coordinate the mobile account setup. At minimum, the participating provider's identifying information and email address are required so the CarePilot account can be created and associated with the appropriate provider.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">What devices are supported?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>CarePilot can be used on supported desktop and mobile devices with the required microphone access for ambient documentation. Device, browser, and operating-system requirements may vary. MDLand can provide the current supported-device requirements during onboarding.</p>
+        </div></div>
+      </div>
+
+      <div class="accordion-category">4. Getting Started &amp; 7-Day Trial</div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">Can my practice try iClinic CarePilot before subscribing?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>Yes. Eligible providers may receive a 7-day CarePilot trial. MDLand will first review the CarePilot offering with the practice and confirm which provider or providers would like to participate. Once enrollment and activation are completed, the provider will be notified that CarePilot is available.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">When does the 7-day trial begin?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>The 7-day trial begins once CarePilot has been successfully activated and made available to the participating provider. Submitting an initial request or expressing interest does not by itself start the trial period.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">How do I request a CarePilot trial?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>Contact MDLand to discuss CarePilot and identify the provider or providers interested in participating. MDLand will coordinate the enrollment and activation process. As CarePilot becomes further integrated into the iClinic Account experience, additional self-service enrollment and subscription options may become available.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">What happens after the 7-day trial?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>MDLand will follow up with the practice regarding continued use of CarePilot. Providers who would like to continue can enroll in the paid CarePilot subscription. The trial does not automatically convert to a paid subscription without the appropriate customer authorization.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">What do I need to get started?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>You need an active iClinic account, an eligible provider, and a supported device with microphone access for ambient documentation. For mobile use, a CarePilot account must also be created using the provider's email address. MDLand can provide onboarding materials and assistance to help providers become familiar with the CarePilot workflow.</p>
+        </div></div>
+      </div>
+
+      <div class="accordion-category">5. Pricing &amp; Billing</div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">How much does iClinic CarePilot cost?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>The standard iClinic CarePilot subscription is $200 per provider per month. This includes:</p>
+          <ul>
+            <li>CarePilot Scribe</li>
+            <li>Core ICD-10 and CPT coding suggestions</li>
+            <li>CarePilot Pre-Visit Planning (included at no additional cost)</li>
+          </ul>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">Is there a setup fee?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>No separate setup fee currently applies to the standard iClinic CarePilot subscription.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">When does billing begin?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>For providers participating in an approved 7-day trial, billing begins after the provider or practice elects to continue with CarePilot and completes the applicable paid subscription process.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">How is a "provider" defined for billing purposes?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>CarePilot subscriptions are provider-specific and are generally associated with the individual authorized provider/NPI rather than the practice as a whole.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">What if my practice has more than one provider?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>Providers can be enrolled individually, allowing a practice to begin with selected providers and expand CarePilot adoption over time. Each subscribed provider is billed separately.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">Can I cancel my CarePilot subscription?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>Yes. Customers may request cancellation of a CarePilot subscription by contacting MDLand Support and completing the applicable cancellation request process.</p>
+        </div></div>
+      </div>
+
+      <div class="accordion-category">6. CarePilot Plus &amp; Advanced Coding</div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">What is CarePilot Plus?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>CarePilot Plus is an expanded CarePilot offering designed to provide advanced coding capabilities beyond the core ICD-10 and CPT suggestions included with standard CarePilot. Standard CarePilot already provides core coding suggestions as part of the ambient documentation workflow. CarePilot Plus is intended for customers who want additional coding intelligence and capabilities.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">Is CarePilot Plus included in the $200 CarePilot subscription?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>No. The $200 per provider/month subscription covers standard CarePilot, including CarePilot Scribe, core ICD-10/CPT suggestions, and Pre-Visit Planning. CarePilot Plus is a separate advanced capability. Additional functionality, availability, and applicable pricing will be communicated separately.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">Do I need CarePilot Plus to receive ICD-10 and CPT suggestions?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>No. Core ICD-10 and CPT suggestions are already included with the standard CarePilot ambient documentation experience. CarePilot Plus is intended to extend beyond those core suggestions with more advanced coding functionality.</p>
+        </div></div>
+      </div>
+
+      <div class="accordion-category">7. Security, Privacy &amp; Responsible AI Use</div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">Is patient information protected when using CarePilot?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>CarePilot is provided through MDLand's technology partnership with DocPro. MDLand and DocPro have established applicable business associate and data-protection arrangements supporting the service. CarePilot is designed for use within healthcare workflows where protection of patient information is required.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">Does the provider need to review AI-generated documentation?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>Yes. CarePilot-generated documentation, coding suggestions, and Pre-Visit Planning information are intended to assist the provider. Providers are responsible for reviewing the generated content for accuracy, completeness, and clinical appropriateness before relying on it or finalizing it in the patient's medical record.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">Does the provider need to review ICD-10 and CPT suggestions?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>Yes. ICD-10 and CPT codes generated by CarePilot are suggestions. The provider should review and confirm that the suggested codes accurately reflect the documented encounter before accepting them.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">Can CarePilot make clinical decisions for the provider?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>No. CarePilot is designed to assist providers with clinical documentation, preparation, and related workflows. Clinical judgment and decisions remain the responsibility of the treating provider.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">Do I need to accept terms before using CarePilot?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>Applicable terms and acknowledgements will be provided as part of the CarePilot enrollment or subscription process.</p>
+        </div></div>
+      </div>
+
+      <div class="accordion-category">8. Support &amp; Training</div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">What kind of support is available?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>MDLand serves as the primary customer support contact for iClinic CarePilot. MDLand can assist with onboarding, workflow questions, activation, and general product support. Product or technical issues may be escalated to our technology partner when necessary.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">Is training available?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>Yes. MDLand can provide onboarding assistance, product demonstrations, and supporting materials such as a Quick Start Guide and CarePilot User Guide. For larger deployments, additional onboarding or training sessions can be coordinated with the practice.</p>
+        </div></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">Who do I contact with questions?</button>
+        <div class="accordion-panel"><div class="accordion-panel-inner">
+          <p>MDLand Support</p>
+          <ul>
+            <li>Email: <a href="mailto:support@mdland.com">support@mdland.com</a></li>
+            <li>Phone: 212-363-8000</li>
+            <li>Web: <a href="https://www.mdland.com" target="_blank" rel="noopener">www.mdland.com</a></li>
+          </ul>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-label">CAREPILOT INSTALLATION GUIDE</div>
+        <p class="footer-text">Installation guide, usage docs, and support for CarePilot by iClinic, the MDLand browser extension.</p>
+      </div>
+    </div>
+
+    <div class="footer-watermark" aria-hidden="true">MDLand</div>
+    <p class="footer-copyright">&copy; CarePilot Installation Guide</p>
+    <p class="footer-powered">
+      Powered by
+      <svg class="footer-powered-logo" viewBox="0 0 131 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DocPro">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M40.7933 20.0036H36.7646V4.36843H40.8253C42.9142 4.36843 44.6301 5.05054 45.973 6.41475C47.3159 7.75765 47.9874 9.69739 47.9874 12.234C47.9874 14.7492 47.3053 16.6783 45.9411 18.0212C44.5982 19.3428 42.8822 20.0036 40.7933 20.0036ZM32.9277 23.5207H40.9212C44.1185 23.5207 46.7617 22.5189 48.8507 20.5152C50.9396 18.5115 51.9841 15.7511 51.9841 12.234C51.9841 8.69555 50.9396 5.91383 48.8507 3.88883C46.783 1.86382 44.1505 0.851318 40.9531 0.851318H32.9277V23.5207ZM91.8788 11.2748H95.8756C97.0906 11.2748 98.0391 10.9657 98.7212 10.3475C99.4247 9.70805 99.7764 8.85542 99.7764 7.78962C99.7764 6.70252 99.4247 5.83922 98.7212 5.19975C98.0391 4.56027 97.0906 4.24054 95.8756 4.24054H91.8788V11.2748ZM96.4511 14.664H91.8788V23.5207H88.042V0.851318H96.4511C98.604 0.851318 100.341 1.50145 101.663 2.80172C103.006 4.10198 103.677 5.75396 103.677 7.75765C103.677 9.78265 103.006 11.4453 101.663 12.7456C100.341 14.0245 98.604 14.664 96.4511 14.664ZM122.888 20.6749C121.673 20.6749 120.64 20.2379 119.787 19.364C118.956 18.4687 118.54 17.2537 118.54 15.719C118.54 14.1842 118.956 12.9905 119.787 12.1379C120.64 11.2639 121.673 10.827 122.888 10.827C124.103 10.827 125.127 11.2639 125.958 12.1379C126.811 12.9905 127.237 14.1842 127.237 15.719C127.237 17.275 126.811 18.49 125.958 19.364C125.127 20.2379 124.103 20.6749 122.888 20.6749ZM128.676 9.80381C127.162 8.24775 125.233 7.46973 122.888 7.46973C120.565 7.46973 118.636 8.24775 117.101 9.80381C115.588 11.3599 114.831 13.3316 114.831 15.719C114.831 18.1063 115.588 20.0887 117.101 21.6661C118.636 23.2221 120.565 24.0002 122.888 24.0002C125.233 24.0002 127.162 23.2221 128.676 21.6661C130.21 20.0887 130.978 18.1063 130.978 15.719C130.978 13.3316 130.21 11.3599 128.676 9.80381ZM114.385 11.6266V7.85373C114.065 7.78979 113.735 7.75781 113.394 7.75781C112.371 7.75781 111.454 8.00295 110.644 8.49321C109.834 8.96216 109.248 9.61229 108.885 10.4436V7.94966H105.272V23.5209H108.981V16.103C108.981 13.0548 110.378 11.5307 113.17 11.5307C113.554 11.5307 113.959 11.5627 114.385 11.6266ZM75.4431 12.2017C76.2744 11.3278 77.2869 10.8908 78.4806 10.8908C79.5677 10.8908 80.4097 11.1786 81.0065 11.7541C81.6247 12.3083 82.0403 12.9904 82.2535 13.8004L85.5788 12.5854C85.2164 11.1786 84.417 9.97424 83.1807 8.97239C81.9657 7.97055 80.3884 7.46963 78.4486 7.46963C76.1891 7.46963 74.292 8.24766 72.7573 9.80371C71.2439 11.3598 70.4871 13.3315 70.4871 15.7189C70.4871 18.0849 71.2545 20.0566 72.7893 21.634C74.3453 23.2114 76.2637 24.0001 78.5445 24.0001C80.4416 24.0001 81.9977 23.4991 83.2127 22.4973C84.449 21.4954 85.2803 20.3018 85.7067 18.9162L82.4453 17.7332C82.2322 18.4793 81.7952 19.1507 81.1344 19.7475C80.4949 20.3231 79.6316 20.6108 78.5445 20.6108C77.3295 20.6108 76.2957 20.1739 75.4431 19.2999C74.6118 18.426 74.1961 17.2323 74.1961 15.7189C74.1961 14.2267 74.6118 13.0544 75.4431 12.2017ZM58.2081 19.3639C59.0607 20.2378 60.0946 20.6748 61.3096 20.6748C62.5246 20.6748 63.5477 20.2378 64.379 19.3639C65.2317 18.4899 65.658 17.2749 65.658 15.7189C65.658 14.1841 65.2317 12.9904 64.379 12.1378C63.5477 11.2638 62.5246 10.8269 61.3096 10.8269C60.0946 10.8269 59.0607 11.2638 58.2081 12.1378C57.3768 12.9904 56.9611 14.1841 56.9611 15.7189C56.9611 17.2536 57.3768 18.4686 58.2081 19.3639ZM61.3096 7.46963C63.6543 7.46963 65.5834 8.24766 67.0968 9.80371C68.6316 11.3598 69.3989 13.3315 69.3989 15.7189C69.3989 18.1062 68.6316 20.0886 67.0968 21.666C65.5834 23.222 63.6543 24.0001 61.3096 24.0001C58.9861 24.0001 57.0571 23.222 55.5223 21.666C54.0089 20.0886 53.2522 18.1062 53.2522 15.7189C53.2522 13.3315 54.0089 11.3598 55.5223 9.80371C57.0571 8.24766 58.9861 7.46963 61.3096 7.46963Z" fill="#05000F" fill-opacity="0.45"/>
+        <g clip-path="url(#footerDocproLogoClip)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M23.835 9.64708V14.1884C23.835 15.1271 23.0718 15.8903 22.133 15.8903H15.8898V22.1335C15.8898 23.0723 15.1267 23.8354 14.1858 23.8354H9.64662C8.70575 23.8354 7.94259 23.0723 7.94259 22.1335V15.8903H4.63281V7.94515H7.94259V1.70193C7.94259 0.763152 8.70575 0 9.64662 0H14.1858C15.1267 0 15.8898 0.763152 15.8898 1.70193V7.94515H22.133C23.0718 7.94515 23.835 8.7083 23.835 9.64708ZM3.97256 8.93827V14.8971C3.97256 15.4449 3.52721 15.8903 2.97941 15.8903C2.43162 15.8903 1.98627 15.4449 1.98627 14.8971V8.93827C1.98627 8.39048 2.43162 7.94513 2.97941 7.94513C3.52721 7.94513 3.97256 8.39048 3.97256 8.93827ZM1.32349 15.2275V8.60792C1.32349 8.24203 1.02869 7.94513 0.662793 7.94513C0.296898 7.94513 0 8.24203 0 8.60792V15.2275C0 15.5934 0.296898 15.8903 0.662793 15.8903C1.02869 15.8903 1.32349 15.5934 1.32349 15.2275Z" fill="#369EFF" fill-opacity="0.7"/>
+        </g>
+        <defs>
+          <clipPath id="footerDocproLogoClip">
+            <rect width="23.8354" height="23.8354" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close full-size image">&times;</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<div>
+  <script>
+    <Image>
+</div>

@@ -1,0 +1,8 @@
+# Full-quality source backup — too large for GitHub (>100MB), not used by the site
+assets/use-video-original.mp4
+
+# Original raw video uploads — not referenced by the site, kept as a local backup only
+Videos/
+
+# Original screenshot uploads — duplicated (with better filenames) in assets/
+extension/
