@@ -6,3 +6,7 @@ Videos/
 
 # Original screenshot uploads — duplicated (with better filenames) in assets/
 extension/
+
+# Build intermediates from compressing video for the size-capped Claude Artifact link
+assets/compressed-*.mp4
+assets/ffmpeg2pass-0.log*
